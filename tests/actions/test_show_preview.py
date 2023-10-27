@@ -57,4 +57,4 @@ import pytest
 def test_show_preview(test_input, expected, capsys):
     show_preview(test_input)
     captured = capsys.readouterr()
-    assert expected == captured
+    assert expected == captured.out

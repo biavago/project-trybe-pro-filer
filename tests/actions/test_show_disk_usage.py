@@ -4,7 +4,7 @@ import unittest.mock
 
 def test_with_empty_file(capsys):
     show_disk_usage({"all_files": []})
-    expected  = "Total size: 0\n"
+    expected = "Total size: 0\n"
     captured = capsys.readouterr()
     assert expected == captured.out
 
